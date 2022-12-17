@@ -7,16 +7,16 @@
  * Return: Absolute value of number or zero
  */
 
-int _abs(int c)
+int _abs(int n)
 {
-	if (c < 0)
+	if (n < 0)
 	{
 		int abs_res;
 
-		abs_res = c * -1;
-		
+		abs_res = n * -1;
+
 		return (abs_res);
 	}
 
-	return (c);
+	return (n);
 }
