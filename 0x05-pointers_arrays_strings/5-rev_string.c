@@ -9,26 +9,13 @@
 
 void rev_string(char *s)
 {
-	int i, c, k;
-	char *a, aux;
+	int i,
+	char t;
 
-	a = s;
-
-	while (s[c] != '\0')
+	for (i = 0; i < _strlen(s) / 2; i++)
 	{
-		c++;
-	}
-
-	for (k = 1; k < c; k++)
-	{
-		a++;
-	}
-
-	for (i = 0; i < (c / 2); i++)
-	{
-		aux = s[i];
-		s[i] = *a;
-		*a = aux;
-		a--;
+		t = s[i];
+		s[i] = s[_strlen(s) - i - 1];
+		s[_strlen(s) - i - 1] = t;
 	}
 }
