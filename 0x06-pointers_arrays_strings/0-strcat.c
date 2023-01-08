@@ -18,17 +18,17 @@ char *_strcat(char *dest, char *src)
 
 	while (dest[len] != '\0')
 	{
-		++len;
+		len++;
 	}
 
 	/* concatenate src to dest */
 	for (i = 0; src[i] != '\0'; ++i)
 	{
 		dest[len] = src[i];
-		++len;
+		len++;
 	}
 	/* terminating dest string */
 	dest[len] = '\0';
 
-	return (0);
+	return (dest);
 }
